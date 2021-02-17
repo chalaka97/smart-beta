@@ -13,6 +13,20 @@
 
   <!-- Favicons -->
 
+	<link href="<?php echo base_url('public/img/fevicon.png') ?>" rel="icon">
+	<link href="<?php echo base_url('public/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="<?php echo base_url('public/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+	<link href="<?php echo base_url('public/vendor/icofont/icofont.min.css') ?>" rel="stylesheet">
+
+	<!-- Main CSS File -->
+	<link href="<?php echo base_url('public/css/style.css') ?>" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo base_url('public/assets/css/style.css') ?>">
+	<link rel="stylesheet" href="<?php echo base_url('public/assets/css/Mystyle.css') ?>">
 
 
 </head>
