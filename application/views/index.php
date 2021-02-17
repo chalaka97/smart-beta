@@ -280,6 +280,12 @@
 
   <!-- Template Main JS File -->
   <script src="<?php echo base_url('public/js/main.js') ?>"></script>
+  <!-- Vendor JS Files -->
+  <script src="<?php echo base_url('public/vendor/jquery/jquery.min.js') ?>"></script>
+  <script src="<?php echo base_url('public/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+  <script src="<?php echo base_url('public/vendor/jquery.easing/jquery.easing.min.js') ?>"></script>
+  <script src="<?php echo base_url('public/vendor/php-email-form/validate.js') ?>"></script>
+  <script src="<?php echo base_url('public/vendor/jquery-countdown/jquery.countdown.min.js') ?>"></script>
 
 </body>
 
