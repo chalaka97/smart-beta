@@ -13,7 +13,7 @@
 
   <!-- Favicons -->
 
-	<link href="<?php echo base_url('public/img/fevicon.png') ?>" rel="icon">
+	<link href="<?php echo base_url('public/img/favicon.png') ?>" rel="icon">
 	<link href="<?php echo base_url('public/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
 
 	<!-- Google Fonts -->
@@ -37,7 +37,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center">
 
-      <h1>S-mart</h1><br>
+		<img src="<?php echo base_url('public/img/smart.png') ?>"><br>
 	  <h2>Under Construction </h2>
 		<!--new -->
 		<div class="row">
@@ -153,8 +153,38 @@
 		</div>
 		<br>
 		<!--new end-->
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("April 2, 2021 12:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+				// Get today's date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Output the result in an element with id="demo"
+				document.getElementById("demo").innerHTML = days + ": D " + hours + ": H "
+						+ minutes + ": M " + seconds + ": S ";
+
+				// If the count down is over, write some text
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
       <h2>We're working hard to improve our website and we'll ready to launch after</h2>
-      <div class="countdown d-flex justify-content-center" data-count="2021/4/02">
+<!--      <div class="countdown d-flex justify-content-center" data-count="2021/4/02">
         <div>
           <h3>%D</h3>
           <h4>Days</h4>
@@ -172,7 +202,11 @@
           <h4>Seconds</h4>
         </div>
       </div>
+-->
+		<div id="demo" class="d-flex justify-content-center" style="color: whitesmoke; font-size: 30px; padding: 10px">
 
+
+		</div>
       
 
       <div class="social-links text-center">
@@ -194,7 +228,7 @@
         <div class="section-title">
           <h2>About Us</h2>
          
-			<p>	S-Mart is an organization which sells mobile phones, accessories and computer accessories. We
+			<p style="color: white; font-size: medium">	S-Mart is an organization which sells mobile phones, accessories and computer accessories. We
 				introduce new brands and high quality mobile accessories and computer accessories.
 				We deliver items all over the Sri Lanka. We look forward to being one of the most reputable,
 				leading mobile accessories supplier in Sri Lanka and we are expecting to manufacture mobile parts
@@ -218,7 +252,7 @@
         <div class="row">
 
           <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
+            <div class="info" style="color: white;font-size: large;">
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
@@ -243,7 +277,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="color: white;">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
