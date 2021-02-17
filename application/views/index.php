@@ -98,7 +98,25 @@
 						<li data-target="#carousel" data-slide-to="3"></li>
 						<li data-target="#carousel" data-slide-to="4"></li>
 					</ol>
-					<!--here-->
+					<?php
+					if ($images->num_rows() > 0) {
+						foreach ($images->result() as $row) {
+							$caro_img = $row->img;
+						}
+					}
+					?>
+					<div class="carousel-inner">
+
+						<?php if ($images->num_rows() > 0) {
+							$i = 0;
+							foreach ($images->result() as $row) {
+								?>
+								<div class="carousel-item  <?php if($i==0) echo 'active'?>">
+									<img class="d-block w-100" src="<?php echo base_url('public/assets/img/carousel/'.$row->img); ?>"
+										 alt="First slide">
+								</div>
+								<?php $i++; }
+						}?>
 
 					</div>
 					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
